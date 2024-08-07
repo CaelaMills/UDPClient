@@ -1,6 +1,6 @@
 import socket
 
-target_host = "127.0.0.1" # "127.0.0.1" is your default/standard reserved lookback IP address for every local machine.
+target_host = "127.0.0.1" # "127.0.0.1" is your default/standard reserved loopback IP address for every local machine.
 target_port = 80 # "80" is port 80 which is your typical port for HTTP but since we are creating a UDP client
 # then we can utilize any port number. Hypertext Transfer Protocol or HTTP is a foundational protocol for
 # formatting and transmitting data over web servers (think web pages and vms ***Client-Server Models)
