@@ -13,7 +13,7 @@ import re      # Import regex for sanitization. This library is used for working
 host = "127.0.0.1"  # Localhost IP address
 port = 80           # Port number for UDP communication
 max_length = 1024 # The max length of data should be 1024 bytes. This is for length checks.
-valid_commands = ["   COMMAND_A   "]  # Whitelisted command with whitespace
+valid_commands = ["   COMMAND_A   "]  # Whitelisted the command(s) with whitespace
 # Acceptable commands are put into a data format, a list. This is for whitelisting that allows pre-approved
 # entities--like IP addresses or commands--to interact with a system, like a server.
 
