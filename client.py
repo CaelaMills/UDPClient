@@ -14,12 +14,14 @@ client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 try:
     # Send some data
-    client.sendto(b"This is test data. Please ignore.", (target_host, target_port))
+    #client.sendto(b"This is test data. Please ignore.", (target_host, target_port))
+    command = b"   COMMAND_A   "  # Adding whitespace around the command
+    client.sendto(command, (target_host, target_port))
 
     # Just for completeness...
     # Receive some data
-    data,addr = client.recvfrom(4096)
-    print("Received data:", data)
+    data, addr = client.recvfrom(4096)
+    #print("Received data:", data)
     print("From address:", addr)
 
 except socket.error as e:
@@ -29,3 +31,5 @@ except socket.error as e:
 finally:
     # Ensure the socket is closed
     client.close()
+
+
